@@ -1,0 +1,39 @@
+:root {
+  /* Common styles */
+  --color-black: #000;
+  --color-purple: #651BD0;
+
+  /* Background colors */
+  --color-bg-main: rgba(18, 22, 32, 1);
+  --color-bg-primary: rgba(22, 27, 39, 1);
+  --color-bg-active: rgba(32, 39, 56, 1);
+
+  /* Typography colors */
+  --color-text-main: rgba(255, 255, 255, 1);
+  --color-text-secondary: rgba(169, 171, 199, 1);
+  --color-text-inactive: rgba(161, 161, 161, 1);
+  --color-text-red: rgba(233, 61, 102, 1);
+}
+
+body {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+}
+
+a,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+i {
+  font-style: normal;
+}
