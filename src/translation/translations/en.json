@@ -129,8 +129,8 @@
     "vaults": "Vaults",
     "xvs": "XVS"
   },
-  "bscLink": {
-    "content": "View on bscscan.com"
+  "coreLink": {
+    "content": "View on Core Explorer"
   },
   "chip": {
     "proposalType": {

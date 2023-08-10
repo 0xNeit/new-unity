@@ -26,7 +26,7 @@ export default defineConfig(({ mode }) => ({
     open: true,
     port: 4000,
   },
-  define: {
-    'process.env': {}
+  optimizeDeps: {
+    include: ['@emotion/styled'],
   },
 }));
