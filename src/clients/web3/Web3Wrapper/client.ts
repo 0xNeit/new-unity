@@ -1,4 +1,4 @@
-import config from 'config';
+import config from '../../../config';
 import { Chain, configureChains, createClient } from 'wagmi';
 import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet';
 import { InjectedConnector } from 'wagmi/connectors/injected';
@@ -6,7 +6,7 @@ import { MetaMaskConnector } from 'wagmi/connectors/metaMask';
 import { WalletConnectConnector } from 'wagmi/connectors/walletConnect';
 import { publicProvider } from 'wagmi/providers/public';
 
-import { WALLET_CONNECT_PROJECT_ID } from 'constants/walletConnect';
+import { WALLET_CONNECT_PROJECT_ID } from '../../../constants/walletConnect';
 
 import { CoreWalletConnector } from './coreWalletConnector';
 

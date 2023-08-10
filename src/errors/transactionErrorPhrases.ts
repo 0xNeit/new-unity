@@ -1,4 +1,4 @@
-import { t } from 'translation';
+import { t } from '../translation';
 
 import {
   ComptrollerErrorReporterError,
@@ -7,7 +7,7 @@ import {
   TokenErrorReporterFailureInfo,
   VaiControllerErrorReporterError,
   VaiControllerErrorReporterFailureInfo,
-} from 'constants/contracts/errorReporter';
+} from '../constants/contracts/errorReporter';
 
 export const transactionErrorPhrases: Record<
   | keyof typeof ComptrollerErrorReporterError

@@ -33,6 +33,7 @@ export const useStyles = () => {
     toolbar: css`
       display: flex;
       justify-content: center;
+      margin-bottom: ${theme.spacing(20)};
       padding: ${theme.spacing(10, 8, 12)};
       min-height: 0;
       ${theme.breakpoints.down('lg')} {

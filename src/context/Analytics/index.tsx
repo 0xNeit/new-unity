@@ -1,10 +1,10 @@
-import config from 'config';
+import config from '../../config';
 import noop from 'noop-ts';
 import { PostHog, PostHogProvider, usePostHog } from 'posthog-js/react';
 import React, { useEffect } from 'react';
 
-import { version as DAPP_VERSION } from 'constants/version';
-import { useAuth } from 'context/AuthContext';
+import { version as DAPP_VERSION } from '../../constants/version';
+import { useAuth } from '../AuthContext';
 
 const UserIdentifier: React.FC = () => {
   const { accountAddress } = useAuth();

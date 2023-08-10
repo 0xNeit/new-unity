@@ -1,11 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import Typography from '@mui/material/Typography';
-import config from 'config';
-import { VError, formatVErrorToReadableString } from 'errors';
+import config from '../../../config';
+import { VError, formatVErrorToReadableString } from '../../../errors';
 import React from 'react';
-import { useTranslation } from 'translation';
+import { useTranslation } from '../../../translation';
 
-import { Connector } from 'clients/web3/types';
+import { Connector } from '../../../clients/web3/types';
 
 import { toast } from '../../Toast';
 import { INTEGRATED_WALLETS, UPCOMING_WALLETS, WALLETS } from '../constants';

@@ -4,6 +4,8 @@ import React from 'react';
 
 // import ClaimRewardButton from '../ClaimRewardButton';
 import ConnectButton from '../ConnectButton';
+import ChainSelector from '../ChainSelector';
+import SearchBar from '../SearchBar';
 import { Toolbar } from '../Toolbar';
 // import Breadcrumbs from './Breadcrumbs';
 import { useStyles } from './styles';
@@ -18,6 +20,8 @@ const Header: React.FC = () => {
 
         <div css={styles.ctaContainer}>
           {/* <ClaimRewardButton css={styles.claimXvsButton} /> */}
+          <SearchBar />
+          <ChainSelector />
           <ConnectButton />
         </div>
       </Toolbar>

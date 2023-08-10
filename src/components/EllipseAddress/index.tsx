@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
-import { truncateAddress } from 'utils';
+import { truncateAddress } from '../../utils';
 
 import { useStyles } from './styles';
 import { Breakpoint } from './types';

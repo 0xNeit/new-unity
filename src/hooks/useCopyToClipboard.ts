@@ -1,7 +1,7 @@
 import copyToClipboard from 'copy-to-clipboard';
-import { useTranslation } from 'translation';
+import { useTranslation } from '../translation';
 
-import { toast } from 'components/Toast';
+import { toast } from '../components/Toast';
 
 const useCopyToClipboard = (name: string) => {
   const { t } = useTranslation();

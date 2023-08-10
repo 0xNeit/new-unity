@@ -1,9 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import Typography from '@mui/material/Typography';
 import React from 'react';
-import { useTranslation } from 'translation';
+import { useTranslation } from '../../../translation';
 
-import useCopyToClipboard from 'hooks/useCopyToClipboard';
+import useCopyToClipboard from '../../../hooks/useCopyToClipboard';
 
 import { CoreLink } from '../../CoreLink';
 import { SecondaryButton } from '../../Button';

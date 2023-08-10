@@ -1,5 +1,5 @@
 import BigNumber from 'bignumber.js';
-import { Token, VToken } from 'types';
+import { Token, VToken } from '../types';
 
 import { formatTokensToReadableValue } from './formatTokensToReadableValue';
 

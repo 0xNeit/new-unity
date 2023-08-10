@@ -11,8 +11,8 @@ export const FONTS = {
 export const PALETTE = {
   mode: 'dark',
   background: {
-    default: 'rgba(24, 29, 39, 1)',
-    paper: 'rgba(30, 36, 49, 1)',
+    default: '#F9F9F9',
+    paper: '#FFF',
     black: '#1F2028',
   },
   primary: {
@@ -21,17 +21,17 @@ export const PALETTE = {
     dark: 'var(--color-blue-hover)',
   },
   secondary: {
-    light: 'rgba(45, 53, 73, 1)',
+    light: '#F9F9F9',
     main: 'rgba(24, 29, 42, 1)',
     dark: 'rgba(18, 22, 32, 1)',
   },
   text: {
-    primary: 'rgba(255, 255, 255, 1)',
-    secondary: 'rgba(170, 179, 202, 1)',
+    primary: '#002237',
+    secondary: '#657795',
     disabled: 'rgba(161, 161, 161, 1)',
   },
   button: {
-    main: 'rgba(58, 120, 255, 1)',
+    main: '#651BD0',
     medium: 'rgba(38, 90, 204, 1)',
     dark: 'rgba(27, 67, 152, 1)',
   },
@@ -96,7 +96,7 @@ export const SHAPE = {
     xxLarge: SPACING * 10,
   },
   footerHeight: '56px',
-  drawerWidthDesktop: '224px',
+  drawerWidthDesktop: '341px',
   drawerWidthTablet: '80px',
 };
 
@@ -137,6 +137,7 @@ export default createTheme({
       fontSize: '1rem',
       fontWeight: 600,
       letterSpacing: '0.3px',
+      color: PALETTE.text.secondary,
       lineHeight: 1.5,
     },
     small1: {

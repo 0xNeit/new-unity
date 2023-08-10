@@ -4,7 +4,7 @@ import React from 'react';
 import {
   SuccessfulTransactionModal,
   SuccessfulTransactionModalProps,
-} from 'components/SuccessfulTransactionModal';
+} from '../components/SuccessfulTransactionModal';
 
 export type OpenSuccessfulTransactionModalInput = Pick<
   SuccessfulTransactionModalProps,

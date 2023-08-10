@@ -1,5 +1,5 @@
 import { IPlayerProps, Player } from '@lottiefiles/react-lottie-player';
-import config from 'config';
+import config from '../../config';
 import React from 'react';
 
 import * as files from './files';

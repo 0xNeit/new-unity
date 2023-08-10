@@ -127,7 +127,7 @@
     "swap": "Swap",
     "vai": "VAI",
     "vaults": "Vaults",
-    "xvs": "XVS"
+    "ucore": "UCORE"
   },
   "coreLink": {
     "content": "View on Core Explorer"
@@ -161,16 +161,16 @@
     "connectButton": "Connect wallet"
   },
   "convertVrt": {
-    "connectWalletToWithdrawXvs": "Please connect your wallet to withdraw XVS",
+    "connectWalletToWithdrawUcore": "Please connect your wallet to withdraw UCORE",
     "convert": "Convert",
     "infoConversionCompleted": "Completed @ 16:00 on 3.31.23",
-    "internalErrorXvsToVrtConversionRatioUndefined": "xvsToVrtConversionRatio undefined",
+    "internalErrorUcoreToVrtConversionRatioUndefined": "ucoreToVrtConversionRatio undefined",
     "successfulConvertTransactionModal": {
       "title": "Convert submitted successfully"
     },
     "withdraw": "Withdraw",
     "withdrawableAmount": "Withdrawable amount",
-    "withdrawXvs": "Withdraw XVS"
+    "withdrawUcore": "Withdraw UCORE"
   },
   "dashboard": {
     "allTag": "All",
@@ -239,7 +239,7 @@
   "interactive": {
     "copy": {
       "walletAddress": "Wallet address",
-      "xvsAddress": "XVS address"
+      "ucoreAddress": "UCORE address"
     },
     "copyToClipboard": "{{name}} copied to clipboard"
   },
@@ -271,7 +271,7 @@
     "menuItems": {
       "account": "Account",
       "convertVrt": "Convert VRT",
-      "convertVrtTitle": "Convert VRT to XVS",
+      "convertVrtTitle": "Convert VRT to UCORE",
       "corePool": "Core pool",
       "dashboard": "Dashboard",
       "governance": "Governance",
@@ -280,8 +280,8 @@
       "markets": "Markets",
       "swap": "Swap",
       "vai": "VAI",
-      "vaults": "Vaults",
-      "xvs": "XVS"
+      "vaults": "Staking",
+      "ucore": "UCORE"
     }
   },
   "lunaUstWarningModal": {
@@ -864,11 +864,11 @@
     "delegateVotes": "Delegate votes",
     "delegateVoting": "Delegate voting",
     "delegateYourVoting": "2. <Anchor>Delegate your voting power</Anchor> to yourself or somebody else",
-    "depositXvs": "Deposit XVS",
-    "depositYourTokens": "1. <Link>Deposit your tokens</Link> in the XVS Vault ",
+    "depositUcore": "Deposit UCORE",
+    "depositYourTokens": "1. <Link>Deposit your tokens</Link> in the UCORE Vault ",
     "enterContactAddress": "Enter contact address",
     "for": "For",
-    "goToXvsSnapshot": "Go to XVS Snapshot",
+    "goToUcoreSnapshot": "Go to UCORE Snapshot",
     "pages": {
       "actions": "3 of 3 Actions",
       "confirmation": "Confirmation",
@@ -980,9 +980,9 @@
     "delegatingTo": "Delegating to",
     "holding": "Holding",
     "readableSent": "{{date, distanceToNow}} ago",
-    "receivedXvs": "Received XVS",
+    "receivedUcore": "Received UCORE",
     "sent": "Sent",
-    "sentXvs": "Sent XVS",
+    "sentUcore": "Sent UCORE",
     "transactions": "Transactions",
     "undelegated": "Undelegated",
     "venusBalance": "Venus balance",
@@ -1071,18 +1071,18 @@
     },
     "withdrawTabTitle": "Withdraw"
   },
-  "xvs": {
+  "ucore": {
     "columns": {
       "asset": "Asset",
-      "borrowXvsApy": "Borrow XVS APY",
-      "supplyXvsApy": "Supply XVS APY",
-      "xvsPerDay": "XVS Per Day"
+      "borrowUcoreApy": "Borrow UCORE APY",
+      "supplyUcoreApy": "Supply UCORE APY",
+      "ucorePerDay": "UCORE Per Day"
     },
     "dailyDistribution": "Daily Distribution:",
-    "progressBar": "Xvs Distribution progress",
+    "progressBar": "Ucore Distribution progress",
     "remaining": "Remaining:"
   },
-  "xvsPage": {
+  "ucorePage": {
     "isolatedAssetsWarning": "Isolated assets are not included on this page"
   }
 }

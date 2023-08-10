@@ -1,7 +1,7 @@
 import { openInfinityWallet } from '@infinitywallet/infinity-connector';
 import type { Provider } from '@wagmi/core';
-import config from 'config';
-import { VError } from 'errors';
+import config from '../../config';
+import { VError } from '../../errors';
 import { Signer, getDefaultProvider } from 'ethers';
 import noop from 'noop-ts';
 import React, { useCallback, useContext, useEffect } from 'react';
@@ -16,10 +16,10 @@ import {
 } from 'wagmi';
 
 // import useGetIsAddressAuthorized from 'clients/api/queries/getIsAddressAuthorized/useGetIsAddressAuthorized';
-import { Connector, connectorIdByName } from 'clients/web3';
-import { AuthModal } from 'components/AuthModal';
-import { logError } from 'context/ErrorLogger';
-import { isRunningInInfinityWalletApp } from 'utils/walletDetection';
+import { Connector, connectorIdByName } from '../../clients/web3';
+import { AuthModal } from '../../components/AuthModal';
+import { logError } from '../ErrorLogger';
+import { isRunningInInfinityWalletApp } from '../../utils/walletDetection';
 
 export interface AuthContextValue {
   login: (connector: Connector) => Promise<void>;

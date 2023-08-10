@@ -1,6 +1,6 @@
-import { interactionErrorPhrases } from 'errors/interactionErrorPhrases';
-import { transactionErrorPhrases } from 'errors/transactionErrorPhrases';
-import { unexpectedErrorPhrases } from 'errors/unexpectedErrorPhrases';
+import { interactionErrorPhrases } from './interactionErrorPhrases';
+import { transactionErrorPhrases } from './transactionErrorPhrases';
+import { unexpectedErrorPhrases } from './unexpectedErrorPhrases';
 
 import { ErrorCodes, VError, VErrorParamMap, VErrorPhraseMap } from './VError';
 

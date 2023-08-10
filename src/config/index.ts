@@ -1,8 +1,8 @@
-import { ChainId } from 'constants/chains';
-import { Environment } from 'types';
+import { ChainId } from '../constants/chains';
+import { Environment } from '../types';
 
-import { CORE_SCAN_URLS } from 'constants/core';
-import { RPC_URLS } from 'constants/endpoints';
+import { CORE_SCAN_URLS } from '../constants/core';
+import { RPC_URLS } from '../constants/endpoints';
 
 // import { MAINNET_SUBGRAPH_URL, TESTNET_SUBGRAPH_URL } from './codegen';*/
 

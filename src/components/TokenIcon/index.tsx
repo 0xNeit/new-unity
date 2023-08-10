@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
-import { Token } from 'types';
+import { Token } from '../../types';
 
 import { useStyles } from './styles';
 

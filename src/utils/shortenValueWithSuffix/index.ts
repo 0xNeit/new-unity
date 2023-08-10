@@ -1,7 +1,7 @@
 import BigNumber from 'bignumber.js';
 
-import { ONE_BILLION, ONE_MILLION, ONE_THOUSAND, ONE_TRILLION } from 'constants/numbers';
-import getSmartDecimalPlaces from 'utils/getSmartDecimalPlaces';
+import { ONE_BILLION, ONE_MILLION, ONE_THOUSAND, ONE_TRILLION } from '../../constants/numbers';
+import getSmartDecimalPlaces from '../getSmartDecimalPlaces';
 
 export interface ShortenValueWithSuffix {
   value: BigNumber;

@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
-import { isFeatureEnabled } from 'utils';
+import { isFeatureEnabled } from '../../../utils';
 
-import { routes } from 'constants/routing';
-import { useAuth } from 'context/AuthContext';
+import { routes } from '../../../constants/routing';
+import { useAuth } from '../../../context/AuthContext';
 
 import { MenuItem } from '../types';
 
@@ -54,7 +54,7 @@ const useGetMenuItems = () => {
         // Translation key: do not remove this comment
         // t('layout.menuItems.markets')
         i18nKey: 'layout.menuItems.markets',
-        icon: 'venus',
+        icon: 'market',
       });
     }
 
@@ -73,22 +73,22 @@ const useGetMenuItems = () => {
         i18nKey: 'layout.menuItems.swap',
         icon: 'convert',
       },
-      {
+      /* {
         href: routes.history.path,
         // Translation key: do not remove this comment
         // t('layout.menuItems.history')
         i18nKey: 'layout.menuItems.history',
         icon: 'history',
-      },
+      }, */
       {
         href: routes.governance.path,
         // Translation key: do not remove this comment
         // t('layout.menuItems.governance')
         i18nKey: 'layout.menuItems.governance',
-        icon: 'market',
+        icon: 'vote',
       },
-      {
-        href: routes.xvs.path,
+      /*{
+        href: routes.ucore.path,
         // Translation key: do not remove this comment
         // t('layout.menuItems.xvs')
         i18nKey: 'layout.menuItems.xvs',
@@ -108,7 +108,7 @@ const useGetMenuItems = () => {
         // t('layout.menuItems.convertVrtTitle')
         i18nKey: 'layout.menuItems.convertVrt',
         icon: 'convert',
-      },
+      },*/
     );
 
     return menuItems;

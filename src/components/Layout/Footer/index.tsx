@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
-import { useTranslation } from 'translation';
+import { useTranslation } from '../../../translation';
 
-import { Icon } from 'components/Icon';
+import { Icon } from '../../Icon';
 
 import {
   UNITY_DISCORD_URL,

@@ -12,7 +12,7 @@ export const useStyles = () => {
       padding: 0;
     `,
     toolbar: css`
-      padding: ${theme.spacing(8, 10, 0)} !important;
+      padding: ${theme.spacing(8, 28, 0)} !important;
       justify-content: space-between;
       display: flex;
 
@@ -32,6 +32,7 @@ export const useStyles = () => {
       display: flex;
       align-items: center;
       margin-left: auto;
+      gap: 20px;
 
       ${theme.breakpoints.down('lg')} {
         display: none;

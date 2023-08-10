@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
-import { useTranslation } from 'translation';
+import { useTranslation } from '../../translation';
 
-import { useAuth } from 'context/AuthContext';
+import { useAuth } from '../../context/AuthContext';
 
 import { SecondaryButton } from '../Button';
 import { NoticeInfo } from '../Notice';

@@ -6,7 +6,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import Menu from '@mui/material/Menu';
 import Typography from '@mui/material/Typography';
 import React, { useState } from 'react';
-import { useTranslation } from 'translation';
+import { useTranslation } from '../../../translation';
 
 import { ReactComponent as LogoNoText } from 'assets/img/unityLogoPure.svg';
 import { ReactComponent as LogoDesktop } from 'assets/img/unityLogoWithText.svg';

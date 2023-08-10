@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'translation';
+import { useTranslation } from '../../translation';
 
 import { Modal, ModalProps } from '../Modal';
 import { AccountDetails, AccountDetailsProps } from './AccountDetails';

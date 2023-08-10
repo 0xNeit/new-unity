@@ -2,8 +2,8 @@
 import Typography from '@mui/material/Typography';
 import BigNumber from 'bignumber.js';
 import React from 'react';
-import { Token } from 'types';
-import { convertWeiToTokens } from 'utils';
+import { Token } from '../../types';
+import { convertWeiToTokens } from '../../utils';
 
 import { CoreLink } from '../CoreLink';
 import { Icon } from '../Icon';

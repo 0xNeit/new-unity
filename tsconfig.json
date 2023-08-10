@@ -17,7 +17,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "rootDir": ".",
-    "baseUrl": "./src"
+    "baseUrl": "src"
   },
   "ts-node": {
     "experimentalSpecifierResolution": "node"

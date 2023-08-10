@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import Typography from '@mui/material/Typography';
 import React from 'react';
-import { useTranslation } from 'translation';
-import { UrlType, generateCoreScanUrl } from 'utils';
+import { useTranslation } from '../../translation';
+import { UrlType, generateCoreScanUrl } from '../../utils';
 
 import { Breakpoint, EllipseAddress } from '../EllipseAddress';
 import { Icon } from '../Icon';

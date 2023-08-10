@@ -16,6 +16,10 @@ export const styles = ({ fullWidth, variant }: { fullWidth: boolean; variant: Va
     if (refVariant === 'secondary') {
       return css`
         border-color: ${theme.palette.button.medium};
+        border-radius: ${theme.spacing(2)};
+        border-color: #E3EAFA;
+        padding: ${theme.spacing(2, 5)};
+        background-color: ${theme.palette.background.paper};
 
         :disabled {
           border-color: ${theme.palette.secondary.light};
@@ -24,7 +28,7 @@ export const styles = ({ fullWidth, variant }: { fullWidth: boolean; variant: Va
         ${!active &&
         css`
           :hover:not(:disabled) {
-            background-color: ${theme.palette.button.main};
+            background-color: ${theme.palette.background.paper};
             border-color: ${theme.palette.button.main};
           }
         `}
@@ -212,8 +216,8 @@ export const styles = ({ fullWidth, variant }: { fullWidth: boolean; variant: Va
       ${!active &&
       css`
         :hover:not(:disabled) {
-          background-color: ${theme.palette.button.medium};
-          border-color: ${theme.palette.button.medium};
+          background-color: ${theme.palette.button.main};
+          border-color: ${theme.palette.button.main};
         }
       `}
 
@@ -234,7 +238,7 @@ export const styles = ({ fullWidth, variant }: { fullWidth: boolean; variant: Va
     getButton: ({ disabled, active }: { disabled: boolean; active: boolean }) => css`
       border-radius: 8px;
       padding: ${theme.spacing(2, 6)};
-      height: ${theme.spacing(12)};
+      height: ${theme.spacing(16)};
       border: 1px solid transparent;
       background-color: transparent;
       box-shadow: none;

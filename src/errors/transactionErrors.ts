@@ -12,7 +12,7 @@ import {
   VaiVaultErrorReporterInfo,
   XvsVaultProxyErrorReporterError,
   XvsVaultProxyErrorReporterInfo,
-} from 'constants/contracts/errorReporter';
+} from '../constants/contracts/errorReporter';
 
 import { VError, VErrorPhraseMap } from './VError';
 

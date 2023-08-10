@@ -1,9 +1,9 @@
 import * as Sentry from '@sentry/react';
 import { BrowserTracing } from '@sentry/tracing';
-import config from 'config';
+import config from '../../config';
 import React, { useEffect } from 'react';
 
-import { version as DAPP_VERSION } from 'constants/version';
+import { version as DAPP_VERSION } from '../../constants/version';
 
 export const ErrorLoggerProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
   useEffect(() => {
