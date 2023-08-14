@@ -2,7 +2,7 @@ import { ChainId } from '../constants/chains';
 import { Environment } from '../types';
 
 import { CORE_SCAN_URLS } from '../constants/core';
-import { RPC_URLS } from '../constants/endpoints';
+import { API_ENDPOINT_URLS, RPC_URLS } from '../constants/endpoints';
 
 // import { MAINNET_SUBGRAPH_URL, TESTNET_SUBGRAPH_URL } from './codegen';*/
 
@@ -11,7 +11,7 @@ export interface Config {
   chainId: ChainId;
   isOnTestnet: boolean;
   rpcUrl: string;
-  // apiUrl: string;
+  apiUrl: string;
   // subgraphUrl: string;
   coreScanUrl: string;
   sentryDsn: string;
@@ -77,7 +77,7 @@ const localRpcUrl =
     : ENV_VARIABLES.VITE_RPC_URL_TESTNET;
 
 const rpcUrl = isLocalServer ? localRpcUrl : RPC_URLS[chainId];
-// const apiUrl = API_ENDPOINT_URLS[environment];
+const apiUrl = API_ENDPOINT_URLS[environment];
 const coreScanUrl = CORE_SCAN_URLS[chainId];
 // const subgraphUrl = isOnTestnet ? TESTNET_SUBGRAPH_URL : MAINNET_SUBGRAPH_URL;
 
@@ -86,7 +86,7 @@ const config: Config = {
   chainId,
   isOnTestnet,
   rpcUrl,
-  // apiUrl,
+  apiUrl,
   // subgraphUrl,
   coreScanUrl,
   sentryDsn: ENV_VARIABLES.VITE_SENTRY_DSN || '',

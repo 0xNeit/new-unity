@@ -56,16 +56,16 @@
   },
   "announcements": {
     "bethUpdate": {
-      "description": "Binance paused BETH withdrawals on 2023-04-26. We recommend users reduce their exposure to BETH on Venus. Borrowing has been paused. Convert BETH to WBETH on-chain at a 1:1 ratio <Link>here</Link>."
+      "description": "Binance paused BETH withdrawals on 2023-04-26. We recommend users reduce their exposure to BETH on Unity Core. Borrowing has been paused. Convert BETH to WBETH on-chain at a 1:1 ratio <Link>here</Link>."
     },
     "sxpDisabling": {
       "description": "Following recommendation from Gauntlet, borrow and supply for SXP has been paused given concerns around SXP migrating to a new chain and expected decline in SXP liquidity."
     },
     "trxMigration": {
-      "description": "Venus supports the new TRX token in a new market. Borrowing and supplying has been paused for the old TRX token. For more information see the <Link>official announcement by Binance</Link>."
+      "description": "Unity Core supports the new TRX token in a new market. Borrowing and supplying has been paused for the old TRX token. For more information see the <Link>official announcement by Binance</Link>."
     },
     "tusdMigration": {
-      "description": "Venus supports the new TUSD token in a new market. Borrowing and supplying has been paused for the old TUSD token. For more information see the <Link>official announcement by Binance</Link>."
+      "description": "Unity Core supports the new TUSD token in a new market. Borrowing and supplying has been paused for the old TUSD token. For more information see the <Link>official announcement by Binance</Link>."
     }
   },
   "approveTokenSteps": {
@@ -110,12 +110,12 @@
     },
     "walletList": {
       "comingSoon": "Coming soon...",
-      "termsOfServiceLink": "By connecting a wallet, you agree to Venus' <Anchor>Terms of Service</Anchor>"
+      "termsOfServiceLink": "By connecting a wallet, you agree to Unity Core' <Anchor>Terms of Service</Anchor>"
     }
   },
   "breadcrumbs": {
     "account": "Account",
-    "convertVrt": "Convert VRT",
+    "convertUrt": "Convert URT",
     "corePool": "Core pool",
     "dashboard": "Dashboard",
     "governance": "Governance",
@@ -125,7 +125,7 @@
     "markets": "Markets",
     "proposal": "Proposal #{{proposalId}}",
     "swap": "Swap",
-    "vai": "VAI",
+    "uai": "UAI",
     "vaults": "Vaults",
     "ucore": "UCORE"
   },
@@ -160,11 +160,11 @@
   "connectWallet": {
     "connectButton": "Connect wallet"
   },
-  "convertVrt": {
+  "convertUrt": {
     "connectWalletToWithdrawUcore": "Please connect your wallet to withdraw UCORE",
     "convert": "Convert",
     "infoConversionCompleted": "Completed @ 16:00 on 3.31.23",
-    "internalErrorUcoreToVrtConversionRatioUndefined": "ucoreToVrtConversionRatio undefined",
+    "internalErrorUcoreToUrtConversionRatioUndefined": "ucoreToUrtConversionRatio undefined",
     "successfulConvertTransactionModal": {
       "title": "Convert submitted successfully"
     },
@@ -220,7 +220,7 @@
     "deposit": "Deposit",
     "liquidateBorrow": "Liquidate Borrow",
     "mint": "Mint",
-    "mintVAI": "Mint VAI",
+    "mintUAI": "Mint UAI",
     "myTransactions": "My Transactions",
     "proposalCanceled": "Proposal Canceled",
     "proposalCreated": "Proposal Created",
@@ -228,7 +228,7 @@
     "proposalQueued": "Proposal Queued",
     "redeem": "Redeem",
     "repayBorrow": "Repay Borrow",
-    "repayVAI": "Repay VAI",
+    "repayUAI": "Repay UAI",
     "reservesAdded": "Reserves Added",
     "reservesReduced": "Reserves Reduced",
     "selectLabel": "Type",
@@ -270,8 +270,8 @@
     },
     "menuItems": {
       "account": "Account",
-      "convertVrt": "Convert VRT",
-      "convertVrtTitle": "Convert VRT to UCORE",
+      "convertUrt": "Convert URT",
+      "convertUrtTitle": "Convert URT to UCORE",
       "corePool": "Core pool",
       "dashboard": "Dashboard",
       "governance": "Governance",
@@ -279,19 +279,19 @@
       "isolatedPools": "Isolated pools",
       "markets": "Markets",
       "swap": "Swap",
-      "vai": "VAI",
+      "uai": "UAI",
       "vaults": "Staking",
       "ucore": "UCORE"
     }
   },
   "lunaUstWarningModal": {
     "closeButtonLabel": "Got it",
-    "content": "LUNA and UST have been deprecated, please disable them as collateral to get access to the Venus protocol again.",
+    "content": "LUNA and UST have been deprecated, please disable them as collateral to get access to the Unity Core protocol again.",
     "title": "Please disable LUNA and UST as collateral"
   },
   "mainPool": {
-    "description": "Venus’ primary pool is composed of large-cap tokens that meet minimum liquidity requirements.",
-    "name": "Venus Core Pool"
+    "description": "Unity Core’ primary pool is composed of large-cap tokens that meet minimum liquidity requirements.",
+    "name": "Unity Core Core Pool"
   },
   "market": {
     "availableLiquidity": "Available Liquidity",
@@ -650,7 +650,7 @@
     "comptrollerRejection": "Comptroller Rejection",
     "exitMarketBalanceOwed": "Exit Market Balance Owed",
     "exitMarketRejection": "Exit Market Rejection",
-    "insufficientBalanceForVai": "Insufficient Balance For Vai",
+    "insufficientBalanceForUai": "Insufficient Balance For Uai",
     "insufficientLiquidity": "Insufficient Liquidity",
     "insufficientShortfall": "Insufficient Shortfall",
     "interestRateModelError": "Interest Rate Model Error",
@@ -715,8 +715,8 @@
     "repayBorrowNewAccountBorrowBalanceCalculationFailed": "Repay Borrow New Account Borrow Balance Calculation Failed",
     "repayBorrowTransferInNotPossible": "Repay Borrow Transfer In Not Possible",
     "repayBorrowTransferNotPossible": "Repay Borrow Transfer Not Possible",
-    "repayVaiComptrollerRejection": "repay VAI Comptroller Rejection",
-    "repayVaiFreshnessCheck": "Repay VAI Freshness Check",
+    "repayUaiComptrollerRejection": "repay UAI Comptroller Rejection",
+    "repayUaiFreshnessCheck": "Repay UAI Freshness Check",
     "setCloseFactorOwnerCheck": "Set Close Factor Owner Check",
     "setCloseFactorValidation": "Set Close Factor Validation",
     "setCollateralFactorNoExists": "Set Collateral Factor No Exists",
@@ -731,7 +731,7 @@
     "setLiquidationIncentiveOwnerCheck": "Set Liquidation Incentive Owner Check",
     "setLiquidationIncentiveValidation": "Set Liquidation Incentive Validation",
     "setMaxAssetsOwnerCheck": "Set Max Assets Owner Check",
-    "setMintedVaiRejection": "Set Minted VAI Rejection",
+    "setMintedUaiRejection": "Set Minted UAI Rejection",
     "setOracleMarketNotListed": "Set Oracle Market Not Listed",
     "setPauseGuardianOwnerCheck": "Set Pause Guardian Owner Check",
     "setPendingAdminOwnerCheck": "Set Pending Admin Owner Check",
@@ -742,8 +742,8 @@
     "setReserveFactorBoundsCheck": "Set Reserve Factor Bounds Check",
     "setReserveFactorFreshCheck": "Set Reserve Factor Fresh Check",
     "setTreasuryOwnerCheck": "Set Treasury Owner Check",
-    "setVaiControllerOwnerCheck": "Set VAI Controller Owner Check",
-    "setVaiMintRateCheck": "Set VAI Mint Rate Check",
+    "setUaiControllerOwnerCheck": "Set UAI Controller Owner Check",
+    "setUaiMintRateCheck": "Set UAI Mint Rate Check",
     "sftMintNewAccountBalanceCalculationFailed": "SFT Mint New Account Balance Calculation Failed",
     "snapshotError": "Snapshot Error",
     "supportMarketExists": "Support Market Exists",
@@ -762,29 +762,29 @@
     "transferNotEnough": "Transfer Not Enough",
     "transferTooMuch": "Transfer Too Much",
     "unauthorized": "Unauthorized",
-    "vaiBurnRejection": "VAI Burn Rejection",
-    "vaiLiquidateAccrueBorrowInterestFailed": "VAI Liquidate Accrue Borrow Interest Failed",
-    "vaiLiquidateAccrueCollateralInterestFailed": "VAI Liquidate Accrue Collateral Interest Failed",
-    "vaiLiquidateCloseAmountIsUintMax": "VAI Liquidate Close Amount Is UINT Max",
-    "vaiLiquidateCloseAmountIsZero": "VAI Liquidate Close Amount Is Zero",
-    "vaiLiquidateCollateralFreshnessCheck": "VAI Liquidate Collateral Freshness Check",
-    "vaiLiquidateComptrollerCalculateAmountSeizeFailed": "VAI Liquidate Comptroller Calculate Amount Seize Failed",
-    "vaiLiquidateComptrollerRejection": "VAI Liquidate Comptroller Rejection",
-    "vaiLiquidateFreshnessCheck": "VAI Liquidate Freshness Check",
-    "vaiLiquidateLiquidatorIsBorrower": "VAI LiquidateLiquidatorIsBorrower",
-    "vaiLiquidateRepayBorrowFreshFailed": "VAI Liquidate Repay Borrow Fresh Failed",
-    "vaiLiquidateSeizeBalanceDecrementFailed": "VAI Liquidate Seize Balance Decrement Failed",
-    "vaiLiquidateSeizeBalanceIncrementFailed": "VAI Liquidate Seize Balance Increment Failed",
-    "vaiLiquidateSeizeComptrollerRejection": "VAI Liquidate Seize Comptroller Rejection",
-    "vaiLiquidateSeizeLiquidatorIsBorrower": "VAI Liquidate Seize Liquidator Is Borrower",
-    "vaiLiquidateSeizeTooMuch": "VAI Liquidate Seize Too Much",
-    "vaiMintExchangeCalculationFailed": "VAI Mint Exchange Calculation Failed",
-    "vaiMintRejection": "VAI Mint Rejected"
+    "uaiBurnRejection": "UAI Burn Rejection",
+    "uaiLiquidateAccrueBorrowInterestFailed": "UAI Liquidate Accrue Borrow Interest Failed",
+    "uaiLiquidateAccrueCollateralInterestFailed": "UAI Liquidate Accrue Collateral Interest Failed",
+    "uaiLiquidateCloseAmountIsUintMax": "UAI Liquidate Close Amount Is UINT Max",
+    "uaiLiquidateCloseAmountIsZero": "UAI Liquidate Close Amount Is Zero",
+    "uaiLiquidateCollateralFreshnessCheck": "UAI Liquidate Collateral Freshness Check",
+    "uaiLiquidateComptrollerCalculateAmountSeizeFailed": "UAI Liquidate Comptroller Calculate Amount Seize Failed",
+    "uaiLiquidateComptrollerRejection": "UAI Liquidate Comptroller Rejection",
+    "uaiLiquidateFreshnessCheck": "UAI Liquidate Freshness Check",
+    "uaiLiquidateLiquidatorIsBorrower": "UAI LiquidateLiquidatorIsBorrower",
+    "uaiLiquidateRepayBorrowFreshFailed": "UAI Liquidate Repay Borrow Fresh Failed",
+    "uaiLiquidateSeizeBalanceDecrementFailed": "UAI Liquidate Seize Balance Decrement Failed",
+    "uaiLiquidateSeizeBalanceIncrementFailed": "UAI Liquidate Seize Balance Increment Failed",
+    "uaiLiquidateSeizeComptrollerRejection": "UAI Liquidate Seize Comptroller Rejection",
+    "uaiLiquidateSeizeLiquidatorIsBorrower": "UAI Liquidate Seize Liquidator Is Borrower",
+    "uaiLiquidateSeizeTooMuch": "UAI Liquidate Seize Too Much",
+    "uaiMintExchangeCalculationFailed": "UAI Mint Exchange Calculation Failed",
+    "uaiMintRejection": "UAI Mint Rejected"
   },
-  "vai": {
-    "mintVai": {
+  "uai": {
+    "mintUai": {
       "apy": "APY",
-      "connectWallet": "Please connect your wallet to mint VAI",
+      "connectWallet": "Please connect your wallet to mint UAI",
       "mintFeeLabel": "Mint fee",
       "rightMaxButtonLabel": "SAFE MAX",
       "submitButtonDisabledLabel": "Enter a valid amount to mint",
@@ -793,15 +793,15 @@
         "message": "You successfully minted",
         "title": "Your mint was successful"
       },
-      "vaiLimitLabel": "Available VAI limit"
+      "uaiLimitLabel": "Available UAI limit"
     },
-    "repayVai": {
-      "connectWallet": "Please connect your wallet to repay VAI",
+    "repayUai": {
+      "connectWallet": "Please connect your wallet to repay UAI",
       "fullRepayWarning": "The total repay amount might be slightly higher, due to accrued interests while processing the transaction",
       "repayFeeLabel": "Repay fee",
       "repayFeeTooltip": "The amount of interest to be paid when loan is repaid.",
-      "repayVaiBalance": "Repay VAI balance",
-      "repayVaiBalanceTooltip": "Total VAI balance to repay, including interests",
+      "repayUaiBalance": "Repay UAI balance",
+      "repayUaiBalanceTooltip": "Total UAI balance to repay, including interests",
       "rightMaxButtonLabel": "MAX",
       "submitButtonDisabledLabel": "Enter a valid amount to repay",
       "submitButtonLabel": "Repay",
@@ -985,7 +985,7 @@
     "sentUcore": "Sent UCORE",
     "transactions": "Transactions",
     "undelegated": "Undelegated",
-    "venusBalance": "Venus balance",
+    "ucoreBalance": "Ucore balance",
     "viewAll": "View all",
     "votedAbstain": "Voted abstain",
     "votedAgainst": "Voted against",
@@ -1028,7 +1028,7 @@
     "trustWallet": "Trust Wallet",
     "walletConnect": "WalletConnect"
   },
-  "withdrawFromVaiVaultModal": {
+  "withdrawFromUaiVaultModal": {
     "availableTokensLabel": "Available {{tokenSymbol}}",
     "connectWalletMessage": "Please connect your wallet to withdraw {{tokenSymbol}}",
     "submitButtonDisabledLabel": "Enter a valid amount to withdraw",

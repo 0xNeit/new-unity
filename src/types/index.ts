@@ -172,10 +172,10 @@ export interface Market {
   borrowApy: BigNumber;
   borrowCaps: string;
   borrowRatePerBlock: string;
-  borrowVenusApy: BigNumber;
-  borrowVenusApr: BigNumber;
+  borrowUcoreApy: BigNumber;
+  borrowUcoreApr: BigNumber;
   borrowerCount: number;
-  borrowerDailyVenus: string;
+  borrowerDailyUcore: string;
   cash: string;
   collateralFactor: string;
   exchangeRate: string;
@@ -184,12 +184,12 @@ export interface Market {
   name: string;
   reserveFactor: string;
   supplierCount: number;
-  supplierDailyVenus: string;
+  supplierDailyUcore: string;
   supplyCaps: string;
   supplyApy: BigNumber;
   supplyRatePerBlock: string;
-  supplyVenusApy: BigNumber;
-  supplyVenusApr: BigNumber;
+  supplyUcoreApy: BigNumber;
+  supplyUcoreApr: BigNumber;
   symbol: string;
   tokenPrice: BigNumber;
   totalBorrows: string;
@@ -206,9 +206,9 @@ export interface Market {
   underlyingName: string;
   underlyingPrice: string;
   underlyingSymbol: string;
-  venusBorrowIndex: string;
-  venusSpeeds: string;
-  venusSupplyIndex: string;
+  ucoreBorrowIndex: string;
+  ucoreSpeeds: string;
+  ucoreSupplyIndex: string;
   borrowBalanceCents: BigNumber;
   supplyBalanceCents: BigNumber;
 }
@@ -232,9 +232,9 @@ export type TransactionEvent =
   | 'LiquidateBorrow'
   | 'ReservesAdded'
   | 'ReservesReduced'
-  | 'MintVAI'
+  | 'MintUAI'
   | 'Withdraw'
-  | 'RepayVAI'
+  | 'RepayUAI'
   | 'Deposit'
   | 'VoteCast'
   | 'ProposalCreated'
@@ -244,7 +244,7 @@ export type TransactionEvent =
 
 export enum TransactionCategory {
   vtoken = 'vtoken',
-  vai = 'vai',
+  uai = 'uai',
   vote = 'vote',
 }
 

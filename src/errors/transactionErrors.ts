@@ -6,12 +6,12 @@ import {
   ComptrollerErrorReporterFailureInfo,
   TokenErrorReporterError,
   TokenErrorReporterFailureInfo,
-  VaiControllerErrorReporterError,
-  VaiControllerErrorReporterFailureInfo,
-  VaiVaultErrorReporterError,
-  VaiVaultErrorReporterInfo,
-  XvsVaultProxyErrorReporterError,
-  XvsVaultProxyErrorReporterInfo,
+  UaiControllerErrorReporterError,
+  UaiControllerErrorReporterFailureInfo,
+  UaiVaultErrorReporterError,
+  UaiVaultErrorReporterInfo,
+  UcoreVaultProxyErrorReporterError,
+  UcoreVaultProxyErrorReporterInfo,
 } from '../constants/contracts/errorReporter';
 
 import { VError, VErrorPhraseMap } from './VError';
@@ -25,15 +25,15 @@ const checkForTransactionError = (
   errorEnum:
     | typeof ComptrollerErrorReporterError
     | typeof TokenErrorReporterError
-    | typeof VaiControllerErrorReporterError
-    | typeof VaiVaultErrorReporterError
-    | typeof XvsVaultProxyErrorReporterError,
+    | typeof UaiControllerErrorReporterError
+    | typeof UaiVaultErrorReporterError
+    | typeof UcoreVaultProxyErrorReporterError,
   infoEnum:
     | typeof ComptrollerErrorReporterFailureInfo
     | typeof TokenErrorReporterFailureInfo
-    | typeof VaiControllerErrorReporterFailureInfo
-    | typeof VaiVaultErrorReporterInfo
-    | typeof XvsVaultProxyErrorReporterInfo,
+    | typeof UaiControllerErrorReporterFailureInfo
+    | typeof UaiVaultErrorReporterInfo
+    | typeof UcoreVaultProxyErrorReporterInfo,
 ) => {
   const failureEvent = receipt.events?.find(event => event.event === 'Failure');
 
@@ -65,19 +65,19 @@ export const checkForComptrollerTransactionError = (receipt: ContractReceipt) =>
 export const checkForTokenTransactionError = (receipt: ContractReceipt) =>
   checkForTransactionError(receipt, TokenErrorReporterError, TokenErrorReporterFailureInfo);
 
-export const checkForVaiControllerTransactionError = (receipt: ContractReceipt) =>
+export const checkForUaiControllerTransactionError = (receipt: ContractReceipt) =>
   checkForTransactionError(
     receipt,
-    VaiControllerErrorReporterError,
-    VaiControllerErrorReporterFailureInfo,
+    UaiControllerErrorReporterError,
+    UaiControllerErrorReporterFailureInfo,
   );
 
-export const checkForVaiVaultTransactionError = (receipt: ContractReceipt) =>
-  checkForTransactionError(receipt, VaiVaultErrorReporterError, VaiVaultErrorReporterInfo);
+export const checkForUaiVaultTransactionError = (receipt: ContractReceipt) =>
+  checkForTransactionError(receipt, UaiVaultErrorReporterError, UaiVaultErrorReporterInfo);
 
-export const checkForXvsVaultProxyTransactionError = (receipt: ContractReceipt) =>
+export const checkForUcoreVaultProxyTransactionError = (receipt: ContractReceipt) =>
   checkForTransactionError(
     receipt,
-    XvsVaultProxyErrorReporterError,
-    XvsVaultProxyErrorReporterInfo,
+    UcoreVaultProxyErrorReporterError,
+    UcoreVaultProxyErrorReporterInfo,
   );

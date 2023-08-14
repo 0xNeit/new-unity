@@ -23,7 +23,7 @@ export const ConnectButtonUi: React.FC<ConnectButtonProps> = ({
   return (
     <SecondaryButton {...otherProps}>
       {!accountAddress 
-        ? <text css={styles.buttonText}>{t('connectButton.title')}</text> 
+        ? <span css={styles.buttonText}>{t('connectButton.title')}</span> 
         : <div css={styles.spaceSpan}>
             <img src={avatar} />
             {truncateAddress(accountAddress)}

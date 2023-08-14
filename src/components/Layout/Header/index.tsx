@@ -19,7 +19,7 @@ const Header: React.FC = () => {
         {/* <Breadcrumbs /> */}
 
         <div css={styles.ctaContainer}>
-          {/* <ClaimRewardButton css={styles.claimXvsButton} /> */}
+          {/* <ClaimRewardButton css={styles.claimUcoreButton} /> */}
           <SearchBar />
           <ChainSelector />
           <ConnectButton />

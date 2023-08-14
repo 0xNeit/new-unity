@@ -25,7 +25,7 @@ export const useStyles = () => {
         padding: ${theme.spacing(6, 4, 0)} !important;
       }
     `,
-    claimXvsButton: css`
+    claimUcoreButton: css`
       margin-right: ${theme.spacing(6)};
     `,
     ctaContainer: css`

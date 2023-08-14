@@ -81,7 +81,7 @@ export const useStyles = () => {
       height: ${theme.spacing(6)};
       transition: color 0.3s;
     `,
-    bscScanLinkContainer: css`
+    coreScanLinkContainer: css`
       margin-bottom: ${theme.spacing(10)};
 
       ${theme.breakpoints.down('md')} {

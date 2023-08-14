@@ -59,7 +59,7 @@ const client = createClient({
     new CoinbaseWalletConnector({
       chains: [chain],
       options: {
-        appName: 'Venus',
+        appName: 'Ucore',
       },
     }),
     new CoreWalletConnector({

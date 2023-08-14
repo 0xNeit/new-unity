@@ -29,7 +29,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
 
   return (
     <Modal
-      className="venus-modal"
+      className="ucore-modal"
       isOpen={isOpen}
       handleClose={onClose}
       noHorizontalPadding={!accountAddress}

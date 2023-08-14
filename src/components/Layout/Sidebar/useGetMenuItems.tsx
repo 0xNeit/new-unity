@@ -38,7 +38,7 @@ const useGetMenuItems = () => {
           // Translation key: do not remove this comment
           // t('layout.menuItems.corePool')
           i18nKey: 'layout.menuItems.corePool',
-          icon: 'venus',
+          icon: 'fourDots',
         },
         {
           href: routes.isolatedPools.path,

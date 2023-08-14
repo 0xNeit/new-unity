@@ -1,4 +1,4 @@
-import { Multicall } from 'ethereum-multicall';
+import { Multicall } from 'core-multicall';
 import { useMemo } from 'react';
 
 import { useAuth } from '../../context/AuthContext';

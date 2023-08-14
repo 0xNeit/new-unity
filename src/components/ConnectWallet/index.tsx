@@ -40,7 +40,7 @@ export const Prompt: React.FC<React.PropsWithChildren<PromptProps>> = ({
   );
 };
 
-export const ConnectWallet: React.FC<Omit<PromptProps, 'connected' | 'openAuthModal'>> = props => {
+export const ConnectWallet: React.FC<React.PropsWithChildren<Omit<PromptProps, 'connected' | 'openAuthModal'>>> = props => {
   const { accountAddress, openAuthModal } = useAuth();
   return <Prompt {...props} openAuthModal={openAuthModal} connected={!!accountAddress} />;
 };

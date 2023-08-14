@@ -5,8 +5,8 @@ import {
   ComptrollerErrorReporterFailureInfo,
   TokenErrorReporterError,
   TokenErrorReporterFailureInfo,
-  VaiControllerErrorReporterError,
-  VaiControllerErrorReporterFailureInfo,
+  UaiControllerErrorReporterError,
+  UaiControllerErrorReporterFailureInfo,
 } from '../constants/contracts/errorReporter';
 
 export const transactionErrorPhrases: Record<
@@ -14,8 +14,8 @@ export const transactionErrorPhrases: Record<
   | keyof typeof ComptrollerErrorReporterFailureInfo
   | keyof typeof TokenErrorReporterError
   | keyof typeof TokenErrorReporterFailureInfo
-  | keyof typeof VaiControllerErrorReporterError
-  | keyof typeof VaiControllerErrorReporterFailureInfo,
+  | keyof typeof UaiControllerErrorReporterError
+  | keyof typeof UaiControllerErrorReporterFailureInfo,
   string
 > = {
   NO_ERROR: t('transactionErrors.noError'),
@@ -36,7 +36,7 @@ export const transactionErrorPhrases: Record<
   SNAPSHOT_ERROR: t('transactionErrors.snapshotError'),
   TOO_MANY_ASSETS: t('transactionErrors.tooManyAssets'),
   TOO_MUCH_REPAY: t('transactionErrors.tooMuchRepay'),
-  INSUFFICIENT_BALANCE_FOR_VAI: t('transactionErrors.insufficientBalanceForVai'),
+  INSUFFICIENT_BALANCE_FOR_UAI: t('transactionErrors.insufficientBalanceForUai'),
   ACCEPT_ADMIN_PENDING_ADMIN_CHECK: t('transactionErrors.acceptAdminPendingAdminCheck'),
   ACCEPT_PENDING_IMPLEMENTATION_ADDRESS_CHECK: t(
     'transactionErrors.acceptPendingImplementationAddressCheck',
@@ -59,9 +59,9 @@ export const transactionErrorPhrases: Record<
   SUPPORT_MARKET_EXISTS: t('transactionErrors.supportMarketExists'),
   SUPPORT_MARKET_OWNER_CHECK: t('transactionErrors.supportMarketOwnerCheck'),
   SET_PAUSE_GUARDIAN_OWNER_CHECK: t('transactionErrors.setPauseGuardianOwnerCheck'),
-  SET_VAI_MINT_RATE_CHECK: t('transactionErrors.setVaiMintRateCheck'),
-  SET_VAICONTROLLER_OWNER_CHECK: t('transactionErrors.setVaiControllerOwnerCheck'),
-  SET_MINTED_VAI_REJECTION: t('transactionErrors.setMintedVaiRejection'),
+  SET_UAI_MINT_RATE_CHECK: t('transactionErrors.setUaiMintRateCheck'),
+  SET_UAICONTROLLER_OWNER_CHECK: t('transactionErrors.setUaiControllerOwnerCheck'),
+  SET_MINTED_UAI_REJECTION: t('transactionErrors.setMintedUaiRejection'),
   SET_TREASURY_OWNER_CHECK: t('transactionErrors.setTreasuryOwnerCheck'),
   BAD_INPUT: t('transactionErrors.badInput'),
   COMPTROLLER_REJECTION: t('transactionErrors.comptrollerRejection'),
@@ -203,47 +203,47 @@ export const transactionErrorPhrases: Record<
   ADD_RESERVES_FRESH_CHECK: t('transactionErrors.addReservesFreshCheck'),
   ADD_RESERVES_TRANSFER_IN_NOT_POSSIBLE: t('transactionErrors.addReservesTransferInNotPossible'),
   TOKEN_GET_UNDERLYING_PRICE_ERROR: t('transactionErrors.tokenGetUnderlyingPriceError'),
-  REPAY_VAI_COMPTROLLER_REJECTION: t('transactionErrors.repayVaiComptrollerRejection'),
-  REPAY_VAI_FRESHNESS_CHECK: t('transactionErrors.repayVaiFreshnessCheck'),
-  VAI_MINT_EXCHANGE_CALCULATION_FAILED: t('transactionErrors.vaiMintExchangeCalculationFailed'),
+  REPAY_UAI_COMPTROLLER_REJECTION: t('transactionErrors.repayUaiComptrollerRejection'),
+  REPAY_UAI_FRESHNESS_CHECK: t('transactionErrors.repayUaiFreshnessCheck'),
+  UAI_MINT_EXCHANGE_CALCULATION_FAILED: t('transactionErrors.UAIMintExchangeCalculationFailed'),
   SFT_MINT_NEW_ACCOUNT_BALANCE_CALCULATION_FAILED: t(
     'transactionErrors.sftMintNewAccountBalanceCalculationFailed',
   ),
   REDEEM_FEE_CALCULATION_FAILED: t('transactionErrors.redeemFeeCalculationFailed'),
-  VAI_MINT_REJECTION: t('transactionErrors.vaiMintRejection'),
-  VAI_BURN_REJECTION: t('transactionErrors.vaiBurnRejection'),
-  VAI_LIQUIDATE_ACCRUE_BORROW_INTEREST_FAILED: t(
-    'transactionErrors.vaiLiquidateAccrueBorrowInterestFailed',
+  UAI_MINT_REJECTION: t('transactionErrors.uaiMintRejection'),
+  UAI_BURN_REJECTION: t('transactionErrors.uaiBurnRejection'),
+  UAI_LIQUIDATE_ACCRUE_BORROW_INTEREST_FAILED: t(
+    'transactionErrors.uaiLiquidateAccrueBorrowInterestFailed',
   ),
-  VAI_LIQUIDATE_ACCRUE_COLLATERAL_INTEREST_FAILED: t(
-    'transactionErrors.vaiLiquidateAccrueCollateralInterestFailed',
+  UAI_LIQUIDATE_ACCRUE_COLLATERAL_INTEREST_FAILED: t(
+    'transactionErrors.uaiLiquidateAccrueCollateralInterestFailed',
   ),
-  VAI_LIQUIDATE_COLLATERAL_FRESHNESS_CHECK: t(
-    'transactionErrors.vaiLiquidateCollateralFreshnessCheck',
+  UAI_LIQUIDATE_COLLATERAL_FRESHNESS_CHECK: t(
+    'transactionErrors.uaiLiquidateCollateralFreshnessCheck',
   ),
-  VAI_LIQUIDATE_COMPTROLLER_REJECTION: t('transactionErrors.vaiLiquidateComptrollerRejection'),
-  VAI_LIQUIDATE_COMPTROLLER_CALCULATE_AMOUNT_SEIZE_FAILED: t(
-    'transactionErrors.vaiLiquidateComptrollerCalculateAmountSeizeFailed',
+  UAI_LIQUIDATE_COMPTROLLER_REJECTION: t('transactionErrors.uaiLiquidateComptrollerRejection'),
+  UAI_LIQUIDATE_COMPTROLLER_CALCULATE_AMOUNT_SEIZE_FAILED: t(
+    'transactionErrors.uaiLiquidateComptrollerCalculateAmountSeizeFailed',
   ),
-  VAI_LIQUIDATE_CLOSE_AMOUNT_IS_UINT_MAX: t('transactionErrors.vaiLiquidateCloseAmountIsUintMax'),
-  VAI_LIQUIDATE_CLOSE_AMOUNT_IS_ZERO: t('transactionErrors.vaiLiquidateCloseAmountIsZero'),
-  VAI_LIQUIDATE_FRESHNESS_CHECK: t('transactionErrors.vaiLiquidateFreshnessCheck'),
-  VAI_LIQUIDATE_LIQUIDATOR_IS_BORROWER: t('transactionErrors.vaiLiquidateLiquidatorIsBorrower'),
-  VAI_LIQUIDATE_REPAY_BORROW_FRESH_FAILED: t(
-    'transactionErrors.vaiLiquidateRepayBorrowFreshFailed',
+  UAI_LIQUIDATE_CLOSE_AMOUNT_IS_UINT_MAX: t('transactionErrors.uaiLiquidateCloseAmountIsUintMax'),
+  UAI_LIQUIDATE_CLOSE_AMOUNT_IS_ZERO: t('transactionErrors.uaiLiquidateCloseAmountIsZero'),
+  UAI_LIQUIDATE_FRESHNESS_CHECK: t('transactionErrors.uaiLiquidateFreshnessCheck'),
+  UAI_LIQUIDATE_LIQUIDATOR_IS_BORROWER: t('transactionErrors.uaiLiquidateLiquidatorIsBorrower'),
+  UAI_LIQUIDATE_REPAY_BORROW_FRESH_FAILED: t(
+    'transactionErrors.uaiLiquidateRepayBorrowFreshFailed',
   ),
-  VAI_LIQUIDATE_SEIZE_BALANCE_INCREMENT_FAILED: t(
-    'transactionErrors.vaiLiquidateSeizeBalanceIncrementFailed',
+  UAI_LIQUIDATE_SEIZE_BALANCE_INCREMENT_FAILED: t(
+    'transactionErrors.uaiLiquidateSeizeBalanceIncrementFailed',
   ),
-  VAI_LIQUIDATE_SEIZE_BALANCE_DECREMENT_FAILED: t(
-    'transactionErrors.vaiLiquidateSeizeBalanceDecrementFailed',
+  UAI_LIQUIDATE_SEIZE_BALANCE_DECREMENT_FAILED: t(
+    'transactionErrors.uaiLiquidateSeizeBalanceDecrementFailed',
   ),
-  VAI_LIQUIDATE_SEIZE_COMPTROLLER_REJECTION: t(
-    'transactionErrors.vaiLiquidateSeizeComptrollerRejection',
+  UAI_LIQUIDATE_SEIZE_COMPTROLLER_REJECTION: t(
+    'transactionErrors.uaiLiquidateSeizeComptrollerRejection',
   ),
-  VAI_LIQUIDATE_SEIZE_LIQUIDATOR_IS_BORROWER: t(
-    'transactionErrors.vaiLiquidateSeizeLiquidatorIsBorrower',
+  UAI_LIQUIDATE_SEIZE_LIQUIDATOR_IS_BORROWER: t(
+    'transactionErrors.uaiLiquidateSeizeLiquidatorIsBorrower',
   ),
-  VAI_LIQUIDATE_SEIZE_TOO_MUCH: t('transactionErrors.vaiLiquidateSeizeTooMuch'),
+  UAI_LIQUIDATE_SEIZE_TOO_MUCH: t('transactionErrors.uaiLiquidateSeizeTooMuch'),
   MINT_FEE_CALCULATION_FAILED: t('transactionErrors.mintFeeCalculationFailed'),
 };
